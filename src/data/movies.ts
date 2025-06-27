@@ -174,9 +174,24 @@ export const featuredMovie: Movie = {
 // Only keep the "Most Liked" content row, removing the second and third carousels
 export const contentRows: ContentRow[] = [
   {
+    id: 'trending',
+    title: 'Trending Now',
+    movies: [movies[0], movies[3], movies[1], movies[4], movies[2]]
+  },
+  {
+    id: 'action',
+    title: 'Action Movies',
+    movies: [movies[0], movies[1], movies[3], movies[6], movies[5]]
+  },
+  {
     id: 'most-liked',
     title: 'Most Liked',
     movies: [] // This will be populated dynamically based on likes
+  },
+  {
+    id: 'drama',
+    title: 'Drama Collection',
+    movies: [movies[4], movies[7], movies[8], movies[9], movies[2]]
   }
 ];
 
